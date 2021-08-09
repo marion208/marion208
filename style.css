@@ -1,0 +1,189 @@
+@font-face {
+    font-family: "SourceCodeProMedium";
+    src: url("./fonts/SourceCodePro-Medium.ttf");
+}
+@font-face {
+    font-family: "SourceCodeProLight";
+    src: url("./fonts/SourceCodePro-Light.ttf");
+}
+@font-face {
+    font-family: "SourceCodeProBold";
+    src: url("./fonts/SourceCodePro-Bold.ttf");
+}
+html {
+scroll-behavior: smooth !important;
+}
+body {
+    margin: 0;
+    background-color: black;
+    color: white;
+    font-family: "SourceCodeProLight";
+}
+header {
+    text-align: center;
+    background: url("./images/pc-unsplash.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    color: #ec1752;
+}
+.header_title {
+    position: absolute;
+    top: 40vh;
+    width: 98vw;
+    display: flex;
+    justify-content: center;
+}
+.header_title > h1 {
+    font-size: 4em;
+    margin: 0;
+    padding: 4vh;
+    color: white;
+    font-family: "SourceCodeProMedium";
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+.header_top_position {
+    font-size: 2em;
+    position: absolute;
+    top: 5vh;
+    width: 98vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+.header_central_position {
+    position: absolute;
+    top: 40vh;
+    font-size: 3em;
+    right: 5vh;
+}
+.header_back_position {
+    position: absolute;
+    top: 80vh;
+    font-size: 2em;
+    display: flex;
+    justify-content: space-evenly;
+    width: 98vw;
+}
+.bottom_header {
+    position: absolute;
+    top: 91vh;
+    font-size: 3em;
+    display: flex;
+    justify-content: center;
+    width: 98vw;
+    color: white;
+}
+.link_bottom_header {
+    color: white;
+}
+@media all and (max-width: 1000px) {
+    .card_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 30px;
+    }
+    .card {
+        border: 1px solid #808080;
+        border-radius: 10px;
+        text-align: center;
+        width: 90%;
+        padding: 30px;
+        margin: 10px;
+    }
+}
+@media all and (min-width: 1000px) {
+    .card_container {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        margin: 30px;
+    }
+    .card {
+        border: 1px solid #808080;
+        border-radius: 10px;
+        text-align: center;
+        width: 40%;
+        padding: 10px;
+        margin: 10px;
+        max-width: 600px;
+    }
+    .card_container_alone > .card {
+        width: 80%;
+        max-width: 900px;
+        margin: 30px;
+    }
+}
+.card_container_alone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon_header_card {
+    color: #ec1752;
+    font-size: 2em;
+}
+h2, h3, h4 {
+    margin: 5px;
+    font-family: "SourceCodeProLight";
+}
+h4 {
+    font-style: italic;
+}
+.small_card_section {
+    margin-top: 40px;
+    border: 1px solid #ec1752;
+    border-radius: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.big_card_section {
+    margin-top: 40px;
+    border: 1px solid #ec1752;
+    border-radius: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.very_big_card_section {
+    margin-top: 40px;
+    border: 1px solid #ec1752;
+    border-radius: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 0 5px 0 5px;
+}
+.undertitle_card {
+    color: #ec1752;
+}
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+.languages_symbol {
+    font-size: 2em;
+}
+
+.spaced_list > li {
+    padding: 10px;
+}
+.important_title {
+    text-decoration: underline;
+}
+.div_exp_pro {
+    margin: 35px;
+    border: 1px solid #808080;
+    padding: 5px;
+    border-radius: 10px;
+}
+.div_exp_pro > h1, .div_exp_pro > h5, .div_exp_pro > ul {
+    margin: 5px;
+}
+strong {
+    font-weight: normal;
+    color: #ffff45;
+}
+a {
+    color: #00c4ff;
+    text-decoration: none;
+}
