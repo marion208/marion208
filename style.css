@@ -190,6 +190,3 @@ a {
 .link_to_app {
     font-size: 0.8em;
 }
-.link_to_app:hover {
-    text-decoration: underline;
-}
