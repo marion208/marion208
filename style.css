@@ -1,14 +1,14 @@
 @font-face {
-    font-family: "SourceCodeProMedium";
-    src: url("./fonts/SourceCodePro-Medium.ttf");
+    font-family: "IBMPlexSansArabicMedium";
+    src: url("./fonts/IBMPlexSansArabic-Medium.ttf");
 }
 @font-face {
-    font-family: "SourceCodeProLight";
-    src: url("./fonts/SourceCodePro-Light.ttf");
+    font-family: "IBMPlexSansArabicLight";
+    src: url("./fonts/IBMPlexSansArabic-Light.ttf");
 }
 @font-face {
-    font-family: "SourceCodeProBold";
-    src: url("./fonts/SourceCodePro-Bold.ttf");
+    font-family: "IBMPlexSansArabicBold";
+    src: url("./fonts/IBMPlexSansArabic-SemiBold.ttf");
 }
 html {
 scroll-behavior: smooth !important;
@@ -17,7 +17,7 @@ body {
     margin: 0;
     background-color: black;
     color: white;
-    font-family: "SourceCodeProLight";
+    font-family: "IBMPlexSansArabicLight";
 }
 header {
     text-align: center;
@@ -39,7 +39,7 @@ header {
     margin: 0;
     padding: 4vh;
     color: white;
-    font-family: "SourceCodeProMedium";
+    font-family: "IBMPlexSansArabicMedium";
     text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
 .header_top_position {
@@ -83,6 +83,11 @@ header {
         align-items: center;
         margin: 30px;
     }
+    .card_inline {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     .card {
         border: 1px solid #808080;
         border-radius: 10px;
@@ -95,18 +100,23 @@ header {
 @media all and (min-width: 1000px) {
     .card_container {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
         flex-wrap: wrap;
         margin: 30px;
+    }
+    .card_inline {
+        display: flex;
+        margin: 40px 0 40px 0;
+        justify-content: space-around;
+        flex-wrap: wrap;
     }
     .card {
         border: 1px solid #808080;
         border-radius: 10px;
         text-align: center;
-        width: 40%;
+        width: 100%;
         padding: 10px;
-        margin: 10px;
-        max-width: 600px;
+        margin: 20px;
     }
     .card_container_alone > .card {
         width: 80%;
@@ -126,24 +136,34 @@ header {
 }
 h2, h3, h4 {
     margin: 5px;
-    font-family: "SourceCodeProLight";
+    font-family: "IBMPlexSansArabicLight";
 }
 h4 {
     font-style: italic;
 }
 .small_card_section {
-    margin-top: 40px;
+    margin-top: 0px;
     border: 1px solid #ec1752;
     border-radius: 10px;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin: 1% 1% 1% 1%;
+    width: 200px;
+}
+@media all and (max-width: 1000px) {
+    .small_card_section {
+        margin-top: 40px;
+        width: 100%;
+    }
 }
 .big_card_section {
-    margin-top: 40px;
     border: 1px solid #ec1752;
     border-radius: 10px;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin: 1% 1% 1% 1%;
+    padding: 1% 1% 1% 1%;
+}
+@media all and (min-width: 1000px) {
+    .big_card_section {
+        width: 450px;
+    }
 }
 .very_big_card_section {
     margin-top: 40px;
@@ -189,4 +209,20 @@ a {
 }
 .link_to_app {
     font-size: 0.8em;
+}
+footer {
+    text-align: center;
+    font-size: 0.9em;
+    border-top: solid 1px #808080;
+    margin-top: 50px;
+    font-style: italic;
+    padding: 20px;
+}
+footer > p {
+    margin: 0px;
+}
+footer > p > strong {
+    font-weight: normal;
+    color: white;
+    text-decoration: underline;
 }
