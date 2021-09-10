@@ -1,3 +1,3 @@
-# resume.github.io
+# resume
 
 Mon CV en ligne
