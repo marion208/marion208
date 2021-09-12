@@ -226,3 +226,9 @@ footer > p > strong {
     color: white;
     text-decoration: underline;
 }
+.airy_list > li {
+    padding: 0.5em;
+}
+.airy_list > li > strong {
+    font-size: 1.1em;
+}
